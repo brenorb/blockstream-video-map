@@ -32,7 +32,8 @@ def main(path="analysis/map-before.png", include_ideas=True):
         ax.scatter(p["x"], p["y"], s=27, color=color, alpha=.55, linewidths=0)
         ax.scatter(p["x"], p["y"], s=4, color="#ffffff", alpha=.85, linewidths=0)
     for c in clusters:
-        ax.text(c["x"], c["y"], c["name"].upper(), color=hue[c["id"]], fontsize=7,
+        label_y = c["y"] + (.09 if c["id"] == 9 else 0)
+        ax.text(c["x"], label_y, c["name"].upper(), color=hue[c["id"]], fontsize=7,
                 ha="center", va="center", family="DejaVu Sans", weight="bold",
                 bbox={"facecolor":"#05070c", "alpha":.55, "edgecolor":"none", "pad":2})
     for gi, g in enumerate(ghosts):

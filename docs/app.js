@@ -157,13 +157,14 @@
       for (const c of clusters) {
         if (hidden.has(c.id)) continue;
         const x = sx(c.x), y = sy(c.y);
+        const labelY = c.id === 9 ? y - 30 : y; // keep the satellite label clear of the Idea 4 marker
         ctx.globalAlpha = zk > 5 ? 0.35 : 0.9;
         ctx.fillStyle = "rgba(5,7,12,0.55)";
         const label = c.name.toUpperCase();
         const w = ctx.measureText(label).width;
-        ctx.fillRect(x - w / 2 - 5, y - fs / 2 - 2, w + 10, fs + 4);
+        ctx.fillRect(x - w / 2 - 5, labelY - fs / 2 - 2, w + 10, fs + 4);
         ctx.fillStyle = clusterColor[c.id];
-        ctx.fillText(label, x, y);
+        ctx.fillText(label, x, labelY);
       }
       ctx.globalAlpha = 1;
     }
