@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hypothetical-video-1",
+    "title": "Bitcoin Wallet Backups, UTXOs and Explorer Data Explained",
+    "description": "An educational workshop about Bitcoin wallet recovery backups, BIP39 mnemonics, UTXOs, transaction history and balances. See how a wallet derives addresses and how public explorer data indexes transactions on Bitcoin and Liquid. Compare a fictional wallet's local view with a public block explorer, understand change outputs, and follow an offline checklist for recovery phrase and backup hygiene. Never share recovery words, private keys, or personal wallet details.",
+    "tags": [
+      "BIP39",
+      "Bitcoin backup",
+      "wallet recovery",
+      "wallet balance",
+      "UTXO",
+      "transaction",
+      "Blockstream Explorer",
+      "Bitcoin Explorer API",
+      "Blockstream Green",
+      "Liquid Network",
+      "self custody",
+      "wallet security"
+    ],
+    "categories": [
+      "Education"
+    ],
+    "duration": 720,
+    "availability": "hypothetical",
+    "channel": "Imagined Blockstream educational video (not real)",
+    "region": "Wallet × Explorer gap",
+    "why": "The rendered map showed an enclosed sparse region between wallet education and finance/explorer videos. The target embedding was optimized from its surrounding video vectors while minimizing maximum cosine similarity to the full catalog. This concept combines wallet backup literacy and explorer data without claiming product integration or repeating a setup walkthrough.",
+    "method": "A candidate description and metadata were written from the nearest videos to the optimized target vector, then embedded with the same open-weights model as the real videos. Its target alignment and nearest-real-video distance are computed in the build output.",
+    "target_id": "hypothetical-video-1",
+    "target_cosine": 0.633,
+    "twin": 0.565,
+    "median_real_nearest_similarity": 0.768,
+    "nearest_real_title": "Understanding the Block Explorer",
+    "nearest_real_id": 145,
+    "max_cosine_target": 0.681,
+    "hypothetical": true
+  }
+]

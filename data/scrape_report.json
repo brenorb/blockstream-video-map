@@ -1,0 +1,13 @@
+{
+  "source": "https://www.youtube.com/@Blockstream/videos",
+  "channel": "Blockstream",
+  "channel_id": "UCZNt3fZazX9cwWcC9vjDJ4Q",
+  "scraped_at": "2026-10-28",
+  "playlist_entries": 318,
+  "metadata_records": 318,
+  "videos_with_description": 318,
+  "missing_metadata_ids": [],
+  "metadata_parse_errors": [],
+  "yt_dlp_returncode": 0,
+  "yt_dlp_stderr_tail": ""
+}
