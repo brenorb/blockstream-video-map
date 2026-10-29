@@ -82,12 +82,15 @@ def main():
     gpath, gvpath = DATA / "ghosts.json", DATA / "ghost_embeddings.npy"
     if gpath.exists() and gvpath.exists():
         G = np.load(gvpath)
-        gxy = place(reducer, G, {"center": center, "scale": scale})
+        text_xy = place(reducer, G, {"center": center, "scale": scale})
         for gi, g in enumerate(json.loads(gpath.read_text())):
             sims = X @ G[gi]
             order = np.argsort(-sims)[:K_NEIGHBORS]
+            intended = np.asarray(g.get("target_map_xy", text_xy[gi]), dtype=float)
+            marker_xy = intended if g.get("place_at_target") else text_xy[gi]
             ghosts.append({
-                **g, "x": round(float(gxy[gi, 0]), 5), "y": round(float(gxy[gi, 1]), 5),
+                **g, "x": round(float(marker_xy[0]), 5), "y": round(float(marker_xy[1]), 5),
+                "text_x": round(float(text_xy[gi, 0]), 5), "text_y": round(float(text_xy[gi, 1]), 5),
                 "nn": [[int(j), round(float(sims[j]), 3)] for j in order],
                 "twin": round(float(sims[order[0]]), 3),
                 "closer": round(float((nn_sim > sims[order[0]]).mean()), 4),

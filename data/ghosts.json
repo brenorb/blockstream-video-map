@@ -1,6 +1,8 @@
 [
   {
     "id": "hypothetical-video-1",
+    "gap_id": "original",
+    "map_label": "ORIGINAL IDEA",
     "title": "Bitcoin Wallet Backups, UTXOs and Explorer Data Explained",
     "description": "An educational workshop about Bitcoin wallet recovery backups, BIP39 mnemonics, UTXOs, transaction history and balances. See how a wallet derives addresses and how public explorer data indexes transactions on Bitcoin and Liquid. Compare a fictional wallet's local view with a public block explorer, understand change outputs, and follow an offline checklist for recovery phrase and backup hygiene. Never share recovery words, private keys, or personal wallet details.",
     "tags": [
@@ -24,8 +26,7 @@
     "availability": "hypothetical",
     "channel": "Imagined Blockstream educational video (not real)",
     "region": "Wallet × Explorer gap",
-    "why": "The rendered map showed an enclosed sparse region between wallet education and finance/explorer videos. The target embedding was optimized from its surrounding video vectors while minimizing maximum cosine similarity to the full catalog. This concept combines wallet backup literacy and explorer data without claiming product integration or repeating a setup walkthrough.",
-    "method": "A candidate description and metadata were written from the nearest videos to the optimized target vector, then embedded with the same open-weights model as the real videos. Its target alignment and nearest-real-video distance are computed in the build output.",
+    "why": "The first selected sparse region sits between wallet education and finance/explorer videos. The target embedding was optimized from its surrounding video vectors while minimizing maximum cosine similarity to the full catalog. This concept connects backup literacy and explorer data without claiming product integration.",
     "target_id": "hypothetical-video-1",
     "target_cosine": 0.633,
     "twin": 0.565,
@@ -33,6 +34,348 @@
     "nearest_real_title": "Understanding the Block Explorer",
     "nearest_real_id": 145,
     "max_cosine_target": 0.681,
-    "hypothetical": true
+    "target_map_xy": [
+      -0.4571344542771234,
+      0.2700205922751844
+    ],
+    "gap_center": [
+      -0.4546208381652832,
+      0.2373117208480835
+    ],
+    "gap_radius": 0.12926679849624634,
+    "ingredients": [
+      210,
+      145,
+      276
+    ],
+    "ingredient_sims": {
+      "210": 0.548,
+      "145": 0.565,
+      "276": 0.539
+    },
+    "method": "Delaunay empty circle selected from screenshot at pixel (520, 355); rim embeddings were averaged to anchor the concept. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend.",
+    "hypothetical": true,
+    "place_at_target": true
+  },
+  {
+    "id": "hypothetical-video-comment-1",
+    "gap_id": "comment-1",
+    "map_label": "IDEA 1",
+    "annotation_number": 1,
+    "title": "Bitcoin for Everyone: Satellite Access, Lightning Payments, and Financial Inclusion",
+    "description": "A Bitcoin primer connects satellite-delivered blockchain data, Lightning payment networks, and local merchant payments. A fictional scenario traces a Blockstream Satellite receiver feeding public block data to a Bitcoin node, then explains why Lightning still needs peer connectivity and a return path. Compare Core Lightning, Greenlight, and BTCPay as separate parts of the ecosystem, noting where internet access is required. The satellite feed carries public chain data one way; it does not carry payment messages.",
+    "tags": [
+      "Bitcoin primer",
+      "Blockstream Satellite",
+      "Bitcoin node",
+      "Lightning Network",
+      "Core Lightning",
+      "Greenlight",
+      "BTCPay",
+      "SDR",
+      "financial inclusion",
+      "global access"
+    ],
+    "categories": [
+      "Education"
+    ],
+    "duration": 840,
+    "availability": "hypothetical",
+    "channel": "Imagined Blockstream educational video (not real)",
+    "region": "Satellite × Lightning gap",
+    "why": "This marked gap lies between Satellite, Lightning, finance, and open-source payment-service topics. The concept joins satellite chain reception with connected Lightning payment infrastructure while making the one-way satellite limitation explicit.",
+    "target_id": "hypothetical-video-comment-1",
+    "target_cosine": 0.618,
+    "twin": 0.718,
+    "median_real_nearest_similarity": 0.768,
+    "nearest_real_title": "Blockstream Satellite Coverage Is Now Worldwide",
+    "nearest_real_id": 7,
+    "max_cosine_target": 0.628,
+    "target_map_xy": [
+      -0.022110195271303257,
+      -0.3278034858307099
+    ],
+    "gap_center": [
+      -0.09758470952510834,
+      -0.37476974725723267
+    ],
+    "gap_radius": 0.19463205337524414,
+    "ingredients": [
+      234,
+      22,
+      6,
+      9,
+      230,
+      23,
+      2,
+      18
+    ],
+    "ingredient_sims": {
+      "234": 0.495,
+      "22": 0.693,
+      "6": 0.654,
+      "9": 0.53,
+      "230": 0.609,
+      "23": 0.627,
+      "2": 0.346,
+      "18": 0.566
+    },
+    "method": "Delaunay empty circle selected from browser comment 1 at CSS pixel (288.34765625, 514.998046875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend.",
+    "hypothetical": true,
+    "place_at_target": true
+  },
+  {
+    "id": "hypothetical-video-comment-2",
+    "gap_id": "comment-2",
+    "map_label": "IDEA 2",
+    "annotation_number": 2,
+    "title": "Post-Quantum Bitcoin: Security, Privacy, and Institutional Migration",
+    "description": "A discussion of the quantum threat to Bitcoin and what a future signature migration could mean for public-key exposure, wallet security, fungibility, and institutional adoption. Use simple examples to distinguish a quantum attack model from current network rules, and compare user recovery plans with protocol-level upgrade choices. Connect Bitcoin beyond the internet, privacy, and secure software without predicting a date or claiming an upgrade is active.",
+    "tags": [
+      "Bitcoin quantum threat",
+      "post-quantum signatures",
+      "privacy",
+      "fungibility",
+      "institutional adoption",
+      "public keys",
+      "wallet security",
+      "protocol upgrade",
+      "cryptography"
+    ],
+    "categories": [
+      "Education"
+    ],
+    "duration": 900,
+    "availability": "hypothetical",
+    "channel": "Imagined Blockstream educational video (not real)",
+    "region": "Quantum readiness × privacy gap",
+    "why": "The marked region extends the quantum-readiness and Bitcoin-security discussions toward privacy, adoption, and institutional migration. It separates current protocol rules from future research and proposals.",
+    "target_id": "hypothetical-video-comment-2",
+    "target_cosine": 0.657,
+    "twin": 0.714,
+    "median_real_nearest_similarity": 0.768,
+    "nearest_real_title": "Bitcoin Will Be Ready for Quantum Before Quantum Is Ready for Bitcoin -Adam Back @FINTECHTVglobal",
+    "nearest_real_id": 301,
+    "max_cosine_target": 0.726,
+    "target_map_xy": [
+      0.7364903338990725,
+      -0.1851331838268741
+    ],
+    "gap_center": [
+      0.6580575704574585,
+      -0.20702145993709564
+    ],
+    "gap_radius": 0.12657587230205536,
+    "ingredients": [
+      291,
+      26,
+      32,
+      301,
+      317,
+      298,
+      294
+    ],
+    "ingredient_sims": {
+      "291": 0.677,
+      "26": 0.596,
+      "32": 0.619,
+      "301": 0.714,
+      "317": 0.571,
+      "298": 0.601,
+      "294": 0.595
+    },
+    "method": "Delaunay empty circle selected from browser comment 2 at CSS pixel (491.1640625, 467.51171875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend.",
+    "hypothetical": true,
+    "place_at_target": true
+  },
+  {
+    "id": "hypothetical-video-comment-3",
+    "gap_id": "comment-3",
+    "map_label": "IDEA 3",
+    "annotation_number": 3,
+    "title": "Bitcoin Layer 2 in a Self-Custody Wallet: Verify a Liquid Transfer",
+    "description": "An educational case study follows a fictional self-custody wallet from a BIP39 recovery backup to a Liquid asset transaction. Explain how the user retains signing keys, what separate wallet software or services do for a Layer-2 route, and how public Explorer API data displays asset IDs, UTXOs, fees, and transaction history. Compare with a Bitcoin base-layer transaction; do not claim a new product integration. The example uses no real credentials or funds.",
+    "tags": [
+      "Bitcoin Layer 2",
+      "self-custody",
+      "BIP39",
+      "Bitcoin wallet",
+      "Liquid Network",
+      "Blockstream Explorer API",
+      "asset ID",
+      "UTXO",
+      "transaction signing"
+    ],
+    "categories": [
+      "Education"
+    ],
+    "duration": 780,
+    "availability": "hypothetical",
+    "channel": "Imagined Blockstream educational video (not real)",
+    "region": "Jade × Layer-2 wallet gap",
+    "why": "The selected opening is between Jade wallet education, Bitcoin Layer-2 discussion, self-custody, and Explorer API videos. The concept focuses on what a wallet signs and what public explorer data can verify.",
+    "target_id": "hypothetical-video-comment-3",
+    "target_cosine": 0.512,
+    "twin": 0.553,
+    "median_real_nearest_similarity": 0.768,
+    "nearest_real_title": "Bitcoin Self-Custody Is Easy!",
+    "nearest_real_id": 194,
+    "max_cosine_target": 0.628,
+    "target_map_xy": [
+      -0.46906856897939314,
+      0.3776765393208424
+    ],
+    "gap_center": [
+      -0.40170711278915405,
+      0.3454650044441223
+    ],
+    "gap_radius": 0.169364333152771,
+    "ingredients": [
+      210,
+      276,
+      261,
+      263,
+      289,
+      274,
+      296,
+      292
+    ],
+    "ingredient_sims": {
+      "210": 0.392,
+      "276": 0.444,
+      "261": 0.326,
+      "263": 0.449,
+      "289": 0.342,
+      "274": 0.472,
+      "296": 0.481,
+      "292": 0.467
+    },
+    "method": "Delaunay empty circle selected from browser comment 3 at CSS pixel (205.53515625, 303.65234375); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend.",
+    "hypothetical": true,
+    "place_at_target": true
+  },
+  {
+    "id": "hypothetical-video-comment-4",
+    "gap_id": "comment-4",
+    "map_label": "IDEA 4",
+    "annotation_number": 4,
+    "title": "Blockstream Satellite and Wallet Security: A Self-Custody Recovery Drill",
+    "description": "A fictional recovery drill combines Bitcoin Satellite data, an encrypted wallet backup, and offline signing. Receive blocks at a node, verify a watch-only wallet's transaction history, and keep signing keys isolated until connectivity returns. Explain how wallet UX should distinguish encryption, chain sync, address privacy, and live Lightning communication. Satellite reception is one-way and cannot broadcast payments.",
+    "tags": [
+      "Blockstream Satellite",
+      "Bitcoin Green",
+      "Jade",
+      "encryption",
+      "wallet backup",
+      "self-custody",
+      "transaction verification",
+      "Lightning",
+      "privacy",
+      "offline signing"
+    ],
+    "categories": [
+      "Education"
+    ],
+    "duration": 900,
+    "availability": "hypothetical",
+    "channel": "Imagined Blockstream educational video (not real)",
+    "region": "Wallet security × Satellite gap",
+    "why": "This gap joins Satellite data delivery with Jade/Green wallet-security and encryption topics. The recovery drill separates local chain verification from private-key signing and live network broadcast.",
+    "target_id": "hypothetical-video-comment-4",
+    "target_cosine": 0.574,
+    "twin": 0.717,
+    "median_real_nearest_similarity": 0.768,
+    "nearest_real_title": "Blockstream Jade Features",
+    "nearest_real_id": 117,
+    "max_cosine_target": 0.729,
+    "target_map_xy": [
+      -0.477317694920918,
+      -0.22893665862389695
+    ],
+    "gap_center": [
+      -0.4012129306793213,
+      -0.1534346491098404
+    ],
+    "gap_radius": 0.1472197026014328,
+    "ingredients": [
+      130,
+      114,
+      236,
+      195
+    ],
+    "ingredient_sims": {
+      "130": 0.607,
+      "114": 0.6,
+      "236": 0.489,
+      "195": 0.524
+    },
+    "method": "Delaunay empty circle selected from browser comment 4 at CSS pixel (200.5, 446.546875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend.",
+    "hypothetical": true,
+    "place_at_target": true
+  },
+  {
+    "id": "hypothetical-video-comment-5",
+    "gap_id": "comment-5",
+    "map_label": "IDEA 5",
+    "annotation_number": 5,
+    "title": "A Business Guide to Bitcoin Fees, Wallet Balances, and Layer-2 Payments",
+    "description": "A fictional treasury team keeps bitcoin in self-custody, follows wallet balances, and decides how to settle a payment. Explain on-chain miner fees, market liquidity, Layer-2 routes, and how a public explorer helps reconcile transactions. Connect finance education with practical wallet and payment terminology, and distinguish market liquidity from payment liquidity. Use no live market data or investment recommendations.",
+    "tags": [
+      "Bitcoin finance",
+      "business treasury",
+      "wallet balance",
+      "Bitcoin fees",
+      "Blockstream Green",
+      "Blockstream Explorer API",
+      "Layer 2",
+      "market liquidity",
+      "settlement",
+      "glossary"
+    ],
+    "categories": [
+      "Education"
+    ],
+    "duration": 720,
+    "availability": "hypothetical",
+    "channel": "Imagined Blockstream educational video (not real)",
+    "region": "Finance × Explorer × Layer-2 gap",
+    "why": "This marked opening sits between Bitcoin finance/glossary, Layer-2 markets, wallet, and Explorer API videos. The idea brings those topics together through a fictional business-payment reconciliation exercise, without investment advice.",
+    "target_id": "hypothetical-video-comment-5",
+    "target_cosine": 0.538,
+    "twin": 0.667,
+    "median_real_nearest_similarity": 0.768,
+    "nearest_real_title": "Navigating #Bitcoin Self-Custody With Software & Hardware Wallets With  @Btcandres",
+    "nearest_real_id": 201,
+    "max_cosine_target": 0.646,
+    "target_map_xy": [
+      -0.19151354470462492,
+      0.17838844857034283
+    ],
+    "gap_center": [
+      -0.16512835025787354,
+      0.1859581619501114
+    ],
+    "gap_radius": 0.1567576676607132,
+    "ingredients": [
+      279,
+      262,
+      274,
+      276,
+      277,
+      263,
+      120
+    ],
+    "ingredient_sims": {
+      "279": 0.475,
+      "262": 0.581,
+      "274": 0.484,
+      "276": 0.517,
+      "277": 0.371,
+      "263": 0.619,
+      "120": 0.422
+    },
+    "method": "Delaunay empty circle selected from browser comment 5 at CSS pixel (278.43359375, 360.35546875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend.",
+    "hypothetical": true,
+    "place_at_target": true
   }
 ]

@@ -1,4 +1,4 @@
-/* Blockstream Video Map: channel videos (glowing dots) and one hypothetical idea (gold star). */
+/* Blockstream Video Map: channel videos (glowing dots) and hypothetical ideas (gold stars). */
 (async function () {
   const data = await (await fetch("data.json", { cache: "no-cache" })).json();
   const posts = data.posts;
@@ -194,11 +194,13 @@
         ctx.fillStyle = "#fff4dc";
         starPath(x, y, 10, 2.4);
         ctx.fill();
-        ctx.fillStyle = GOLD;
-        ctx.font = `700 12px "Barlow Condensed", sans-serif`;
-        ctx.textAlign = "left";
-        ctx.textBaseline = "middle";
-        ctx.fillText(`HYPOTHETICAL IDEA`, x + 16, y - 18);
+        if (g.annotation_number != null) {
+          ctx.fillStyle = "#3b250b";
+          ctx.font = `800 10px "Barlow Condensed", sans-serif`;
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.fillText(String(g.annotation_number), x, y + 0.3);
+        }
       });
     }
 
@@ -311,12 +313,13 @@
     } else {
       card.className = "card ghost";
       card.innerHTML = `<button class="close" aria-label="Close">×</button>
-        <div class="label" style="color:${GOLD}">★ New idea ${s.i + 1} · ${esc(p.region || "")}</div>
+        <div class="label" style="color:${GOLD}">★ ${esc(p.map_label || `New idea ${s.i + 1}`)} · ${esc(p.region || "")}</div>
         <div class="notice">Generated from an embedding-space gap. This is a hypothetical concept, not a real Blockstream video.</div>
         <h2>${esc(p.title)}</h2>
         <div class="meta">Concept metadata · ${p.duration ? `${Math.floor(p.duration / 60)} min planned runtime` : "runtime not specified"} · not published</div>
         <p>${esc(p.description)}</p>
         ${p.tags?.length ? `<div class="tags">${p.tags.map((t) => `<span>${esc(t)}</span>`).join("·")}</div>` : ""}
+        ${p.target_cosine != null ? `<div class="small">Marker placed at the optimized gap vector · draft-to-target cosine ${p.target_cosine.toFixed(2)}</div>` : ""}
         ${p.why ? `<h3>Why it's new</h3><p>${esc(p.why)}</p>` : ""}
         ${p.lede ? `<h3>Draft opening</h3><p class="lede">${esc(p.lede)}</p>` : ""}
         <h3>Similarity to the closest real video</h3>
@@ -377,7 +380,7 @@
     }
     legend.innerHTML = clusters.slice().sort((a, b) => b.size - a.size).map((c) =>
       `<button data-c="${c.id}" class="${hidden.has(c.id) ? "off" : ""}" title="${esc(c.blurb)}"><span class="dot" style="color:${clusterColor[c.id]};background:${clusterColor[c.id]}"></span>${esc(c.name)}<span class="n">${c.size}</span></button>`
-    ).join("") + (ghosts.length ? `<button disabled><span class="dot" style="color:${GOLD};background:${GOLD}"></span>★ Hypothetical concept<span class="n">${ghosts.length}</span></button>` : "");
+    ).join("") + (ghosts.length ? `<button disabled><span class="dot" style="color:${GOLD};background:${GOLD}"></span>★ Hypothetical ideas<span class="n">${ghosts.length}</span></button>` : "");
     legend.querySelectorAll("button[data-c]").forEach((b) => b.addEventListener("click", () => {
       const id = +b.dataset.c;
       hidden.has(id) ? hidden.delete(id) : hidden.add(id);
@@ -389,7 +392,7 @@
   const st = data.stats;
   document.getElementById("sub").innerHTML =
     `<b>${st.n}</b> videos, ${st.years[0]}–${st.years[1]}, placed by title, description and metadata. A typical video is <b>${Math.round(st.median_twin * 100)}%</b> similar to its closest neighbor.` +
-    (ghosts.length ? ` <span style="color:${GOLD}">★ ${ghosts.length} gold marker</span> is a hypothetical idea selected from a sparse region.` : "");
+    (ghosts.length ? ` <span style="color:${GOLD}">★ ${ghosts.length} gold markers</span> are hypothetical ideas selected from sparse regions.` : "");
   document.getElementById("foot-model").textContent = data.model;
 
   renderLegend();

@@ -1,0 +1,521 @@
+[
+  {
+    "id": "comment-1",
+    "comment_number": 1,
+    "selected_at_screenshot_px": [
+      288.34765625,
+      514.998046875
+    ],
+    "selected_map_xy": [
+      -0.03591180592775345,
+      -0.42957186698913574
+    ],
+    "center": [
+      -0.09758470952510834,
+      -0.37476974725723267
+    ],
+    "radius": 0.19463205337524414,
+    "score": 0.011458113994228497,
+    "coherence": 0.4632955959865025,
+    "topics": [
+      "finance, blockstream finance, glossary",
+      "lightning network, core lightning, greenlight",
+      "satellite, blockstream satellite, api",
+      "sideswap, liquid network, green",
+      "simplicity, blockstream research, btcpay"
+    ],
+    "ingredients": [
+      234,
+      22,
+      6,
+      9,
+      230,
+      23,
+      2,
+      18
+    ],
+    "target_map_xy": [
+      -0.022110195271303257,
+      -0.3278034858307099
+    ],
+    "max_cosine_blend_before": 0.848098874092102,
+    "max_cosine_target_after": 0.6281880140304565,
+    "target_cosine_anchor": 0.8587313890457153,
+    "nearest": [
+      {
+        "i": 2,
+        "cosine": 0.6281880140304565,
+        "title": "Streamlined Nanopos LApp Offers Point-of-Sale Simplicity"
+      },
+      {
+        "i": 9,
+        "cosine": 0.626562237739563,
+        "title": "Reducing Blockstream Satellite Costs with SDR and GNU Radio"
+      },
+      {
+        "i": 234,
+        "cosine": 0.6256032586097717,
+        "title": "Advancing Bitcoin Education Using Base58 and Bitcoin++ with Lisa Neigut - Blockstream Talk #35"
+      },
+      {
+        "i": 6,
+        "cosine": 0.6250695586204529,
+        "title": "Blockstream Satellite Stories: Japan"
+      },
+      {
+        "i": 22,
+        "cosine": 0.6249961853027344,
+        "title": "Bitcoin Primer Part 03 | Mario Gibney | February 2020"
+      },
+      {
+        "i": 230,
+        "cosine": 0.6249465346336365,
+        "title": "Blockstream Satellite and #Bitcoin Mentioned in the Pantheon Anime by AMC"
+      },
+      {
+        "i": 18,
+        "cosine": 0.6245786547660828,
+        "title": "Bitcoin Primer Webinar 01 | December 9"
+      },
+      {
+        "i": 23,
+        "cosine": 0.6231926679611206,
+        "title": "Bitcoin Primer Webinar Part 04 | Mario Gibney | February 20 2020"
+      },
+      {
+        "i": 19,
+        "cosine": 0.5619552135467529,
+        "title": "Bitcoin Primer Webinar Part 02 | December 16 2019"
+      },
+      {
+        "i": 37,
+        "cosine": 0.5438115000724792,
+        "title": "DEMO: Blockstream Satellite | April 2019"
+      },
+      {
+        "i": 113,
+        "cosine": 0.5291889905929565,
+        "title": "Blockstream Satellite: Planetary Scale"
+      },
+      {
+        "i": 96,
+        "cosine": 0.5203498601913452,
+        "title": "Bitcoin Conference 2022 - Bitcoin & Lightning Node Roundtable - Open Source Stage"
+      }
+    ],
+    "method": "Delaunay empty circle selected from browser comment 1 at CSS pixel (288.34765625, 514.998046875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend."
+  },
+  {
+    "id": "comment-2",
+    "comment_number": 2,
+    "selected_at_screenshot_px": [
+      491.1640625,
+      467.51171875
+    ],
+    "selected_map_xy": [
+      0.720947802066803,
+      -0.2523648738861084
+    ],
+    "center": [
+      0.6580575704574585,
+      -0.20702145993709564
+    ],
+    "radius": 0.12657587230205536,
+    "score": 0.017248950623750276,
+    "coherence": 0.6615095592680431,
+    "topics": [
+      "adam, ceo, bloomberg",
+      "adam, conference, panel",
+      "finance, blockstream finance, glossary",
+      "signature, post-quantum, nick"
+    ],
+    "ingredients": [
+      291,
+      26,
+      32,
+      301,
+      317,
+      298,
+      294
+    ],
+    "target_map_xy": [
+      0.7364903338990725,
+      -0.1851331838268741
+    ],
+    "max_cosine_blend_before": 0.8961766958236694,
+    "max_cosine_target_after": 0.7258117198944092,
+    "target_cosine_anchor": 0.860395073890686,
+    "nearest": [
+      {
+        "i": 291,
+        "cosine": 0.7258117198944092,
+        "title": "Quantum Threat to Bitcoin Is Decades Away - Blockstream CMO on @FINTECHTVglobal"
+      },
+      {
+        "i": 301,
+        "cosine": 0.7250910997390747,
+        "title": "Bitcoin Will Be Ready for Quantum Before Quantum Is Ready for Bitcoin -Adam Back @FINTECHTVglobal"
+      },
+      {
+        "i": 32,
+        "cosine": 0.7250454425811768,
+        "title": "Privacy and Fungibility | April 2019"
+      },
+      {
+        "i": 298,
+        "cosine": 0.7247333526611328,
+        "title": "Adam Back at Paris Blockchain Week 26: @LiquidNetwork, Post-Quantum BTC, & Institutional Adoption"
+      },
+      {
+        "i": 26,
+        "cosine": 0.7246541976928711,
+        "title": "Bitcoin Beyond the Internet | April 2019"
+      },
+      {
+        "i": 317,
+        "cosine": 0.7246009111404419,
+        "title": "AI Is Rewriting Software Security. Bitcoin Is Ready. Peter Bain Blockstream CMO."
+      },
+      {
+        "i": 294,
+        "cosine": 0.7244545221328735,
+        "title": "Blockstream CEO Adam Back Dismantles Bitcoin Quantum FUD Live on Bloomberg"
+      },
+      {
+        "i": 315,
+        "cosine": 0.6637153625488281,
+        "title": "Adam Back on Bloomberg Crypto: AI Security, Quantum Readiness and Institutional Adoption"
+      },
+      {
+        "i": 38,
+        "cosine": 0.6556187868118286,
+        "title": "The Future of Bitcoin | April 2019"
+      },
+      {
+        "i": 297,
+        "cosine": 0.6370421648025513,
+        "title": "Jonas Nick: The Pragmatic Path to Post-Quantum Bitcoin | SHRINCS, SHRIMPS, and Hash-Based Signatures"
+      },
+      {
+        "i": 288,
+        "cosine": 0.6175037622451782,
+        "title": "Adam Back Tells Yahoo Finance: All Companies Become Bitcoin Treasury Companies"
+      },
+      {
+        "i": 212,
+        "cosine": 0.614065945148468,
+        "title": "Unlocking Bitcoin's Potential with Layer-2 featuring Jeff Boortz - Blockstream Talk #27"
+      }
+    ],
+    "method": "Delaunay empty circle selected from browser comment 2 at CSS pixel (491.1640625, 467.51171875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend."
+  },
+  {
+    "id": "comment-3",
+    "comment_number": 3,
+    "selected_at_screenshot_px": [
+      205.53515625,
+      303.65234375
+    ],
+    "selected_map_xy": [
+      -0.34494712948799133,
+      0.35911691188812256
+    ],
+    "center": [
+      -0.40170711278915405,
+      0.3454650044441223
+    ],
+    "radius": 0.169364333152771,
+    "score": 0.009274494046146605,
+    "coherence": 0.46141392844063894,
+    "topics": [
+      "finance, blockstream finance, glossary",
+      "green, blockstream green, wallet",
+      "jade, blockstream jade, wallet",
+      "sideswap, liquid network, green"
+    ],
+    "ingredients": [
+      210,
+      276,
+      261,
+      263,
+      289,
+      274,
+      296,
+      292
+    ],
+    "target_map_xy": [
+      -0.46906856897939314,
+      0.3776765393208424
+    ],
+    "max_cosine_blend_before": 0.8310683965682983,
+    "max_cosine_target_after": 0.6278718113899231,
+    "target_cosine_anchor": 0.8598119020462036,
+    "nearest": [
+      {
+        "i": 263,
+        "cosine": 0.6278718113899231,
+        "title": "What Is the Best Way to Integrate Bitcoin L2 Into Your Sats Flow"
+      },
+      {
+        "i": 276,
+        "cosine": 0.6264611482620239,
+        "title": "The Blockstream Explorer API: Powering Bitcoin & Liquid Apps Behind the Scenes"
+      },
+      {
+        "i": 292,
+        "cosine": 0.6259693503379822,
+        "title": "Skip the Crypto Exchange, Buy Bitcoin Straight to Self-Custody with Blockstream on Desktop"
+      },
+      {
+        "i": 274,
+        "cosine": 0.6258866786956787,
+        "title": "Blockstream Explorer API: Instantly Generate Keys & Start Building Today!"
+      },
+      {
+        "i": 296,
+        "cosine": 0.6253321170806885,
+        "title": "Built by Adam Back's Team at Blockstream | The Bitcoin App Connecting All Layer-2s"
+      },
+      {
+        "i": 261,
+        "cosine": 0.624069094657898,
+        "title": "How to Stack Cheap Sats with Bitcoin L2"
+      },
+      {
+        "i": 289,
+        "cosine": 0.6231184601783752,
+        "title": "How Central Banks Stole Your Money (And Why Bitcoin Is the Exit)"
+      },
+      {
+        "i": 210,
+        "cosine": 0.6229420304298401,
+        "title": "Are All Bitcoin Mnemonics Interchangeable?"
+      },
+      {
+        "i": 272,
+        "cosine": 0.5552764534950256,
+        "title": "Introducing the New Blockstream Jade Plus: An Open-Source Bitcoin Hardware Wallet"
+      },
+      {
+        "i": 208,
+        "cosine": 0.5551249384880066,
+        "title": "Defend Your #Bitcoin Against the Current Thing With The Blockstream Jade Hardware Wallet"
+      },
+      {
+        "i": 74,
+        "cosine": 0.5483287572860718,
+        "title": "Blockstream Jade | How to set up a Liquid wallet"
+      },
+      {
+        "i": 273,
+        "cosine": 0.5449702143669128,
+        "title": "Advancing Bitcoin Self-Custody: How We Built the Jade Plus Bitcoin Hardware Wallet"
+      }
+    ],
+    "method": "Delaunay empty circle selected from browser comment 3 at CSS pixel (205.53515625, 303.65234375); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend."
+  },
+  {
+    "id": "comment-4",
+    "comment_number": 4,
+    "selected_at_screenshot_px": [
+      200.5,
+      446.546875
+    ],
+    "selected_map_xy": [
+      -0.3637370765209198,
+      -0.17412938177585602
+    ],
+    "center": [
+      -0.4012129306793213,
+      -0.1534346491098404
+    ],
+    "radius": 0.1472197026014328,
+    "score": 0.01816651610475775,
+    "coherence": 0.6155335108439127,
+    "topics": [
+      "jade, blockstream jade, wallet",
+      "satellite, blockstream satellite, api"
+    ],
+    "ingredients": [
+      130,
+      114,
+      236,
+      195
+    ],
+    "target_map_xy": [
+      -0.477317694920918,
+      -0.22893665862389695
+    ],
+    "max_cosine_blend_before": 0.8569890856742859,
+    "max_cosine_target_after": 0.7289117574691772,
+    "target_cosine_anchor": 0.8637479543685913,
+    "nearest": [
+      {
+        "i": 195,
+        "cosine": 0.7289117574691772,
+        "title": "Blockstream Green UX Improvements"
+      },
+      {
+        "i": 236,
+        "cosine": 0.7288419008255005,
+        "title": "Blockstream 2023 Review: Layered Architecture"
+      },
+      {
+        "i": 114,
+        "cosine": 0.7285906672477722,
+        "title": "Sending Encrypted Messages Over Blockstream Satellite With Lightning"
+      },
+      {
+        "i": 130,
+        "cosine": 0.7282645106315613,
+        "title": "What Is Encryption?"
+      },
+      {
+        "i": 127,
+        "cosine": 0.6431661248207092,
+        "title": "Broadcasting a Public Message Over the Blockstream Satellite API"
+      },
+      {
+        "i": 124,
+        "cosine": 0.631464958190918,
+        "title": "What Is the Blockstream Satellite?"
+      },
+      {
+        "i": 113,
+        "cosine": 0.6186664700508118,
+        "title": "Blockstream Satellite: Planetary Scale"
+      },
+      {
+        "i": 235,
+        "cosine": 0.6106307506561279,
+        "title": "Lightning on Blockstream Green"
+      },
+      {
+        "i": 241,
+        "cosine": 0.6053825616836548,
+        "title": "How to Set Up a Lightning Wallet in Blockstream Green"
+      },
+      {
+        "i": 154,
+        "cosine": 0.59050452709198,
+        "title": "What Is the Blockstream Explorer?"
+      },
+      {
+        "i": 181,
+        "cosine": 0.586712658405304,
+        "title": "How to set up Blockstream Jade with Green | Blockstream Jade"
+      },
+      {
+        "i": 279,
+        "cosine": 0.5821903944015503,
+        "title": "Blockstream's Next Chapter: Building the Future of Bitcoin with Self-Sovereignty, Security, & Scale"
+      }
+    ],
+    "method": "Delaunay empty circle selected from browser comment 4 at CSS pixel (200.5, 446.546875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend."
+  },
+  {
+    "id": "comment-5",
+    "comment_number": 5,
+    "selected_at_screenshot_px": [
+      278.43359375,
+      360.35546875
+    ],
+    "selected_map_xy": [
+      -0.07290858030319214,
+      0.1475151777267456
+    ],
+    "center": [
+      -0.16512835025787354,
+      0.1859581619501114
+    ],
+    "radius": 0.1567576676607132,
+    "score": 0.010241462315091024,
+    "coherence": 0.48710132780529203,
+    "topics": [
+      "blockstream talk, markets, liquid network",
+      "finance, blockstream finance, glossary",
+      "green, blockstream green, wallet",
+      "sideswap, liquid network, green",
+      "simplicity, blockstream research, btcpay"
+    ],
+    "ingredients": [
+      279,
+      262,
+      274,
+      276,
+      277,
+      263,
+      120
+    ],
+    "target_map_xy": [
+      -0.19151354470462492,
+      0.17838844857034283
+    ],
+    "max_cosine_blend_before": 0.8136903643608093,
+    "max_cosine_target_after": 0.6456784009933472,
+    "target_cosine_anchor": 0.859809398651123,
+    "nearest": [
+      {
+        "i": 263,
+        "cosine": 0.6456784009933472,
+        "title": "What Is the Best Way to Integrate Bitcoin L2 Into Your Sats Flow"
+      },
+      {
+        "i": 276,
+        "cosine": 0.6452751755714417,
+        "title": "The Blockstream Explorer API: Powering Bitcoin & Liquid Apps Behind the Scenes"
+      },
+      {
+        "i": 274,
+        "cosine": 0.6446826457977295,
+        "title": "Blockstream Explorer API: Instantly Generate Keys & Start Building Today!"
+      },
+      {
+        "i": 277,
+        "cosine": 0.6437145471572876,
+        "title": "Bitcoin Pizza Day 2025 at PubKey NYC"
+      },
+      {
+        "i": 262,
+        "cosine": 0.6435362100601196,
+        "title": "Fee Strategies to Lower Bitcoin Transaction Costs"
+      },
+      {
+        "i": 279,
+        "cosine": 0.6419469118118286,
+        "title": "Blockstream's Next Chapter: Building the Future of Bitcoin with Self-Sovereignty, Security, & Scale"
+      },
+      {
+        "i": 120,
+        "cosine": 0.6406213045120239,
+        "title": "Lightning and Liquid on Bitcoin"
+      },
+      {
+        "i": 109,
+        "cosine": 0.5833216905593872,
+        "title": "Developing Bitcoin's Second Layer"
+      },
+      {
+        "i": 212,
+        "cosine": 0.5804864168167114,
+        "title": "Unlocking Bitcoin's Potential with Layer-2 featuring Jeff Boortz - Blockstream Talk #27"
+      },
+      {
+        "i": 292,
+        "cosine": 0.5706352591514587,
+        "title": "Skip the Crypto Exchange, Buy Bitcoin Straight to Self-Custody with Blockstream on Desktop"
+      },
+      {
+        "i": 158,
+        "cosine": 0.5624573230743408,
+        "title": "Blockstream 2022 Review: Building On Bitcoin"
+      },
+      {
+        "i": 214,
+        "cosine": 0.5616994500160217,
+        "title": "Low-Time Preference Bitcoin Infrastructure & Development with Erik Svenson - Blockstream talk #28"
+      }
+    ],
+    "method": "Delaunay empty circle selected from browser comment 5 at CSS pixel (278.43359375, 360.35546875); rim embeddings were averaged to anchor the target. Adam gradient descent (500 steps) minimized logsumexp(40 × cosine) over all 318 normalized 384-dimensional video vectors, constrained to cosine ≥ 0.86 from the rim blend."
+  }
+]
