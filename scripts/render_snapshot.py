@@ -39,8 +39,10 @@ def main(path="analysis/map-before.png", include_ideas=True):
     for gi, g in enumerate(ghosts):
         ax.scatter(g["x"], g["y"], marker="*", s=330, color="#ffb347", edgecolor="#fff4dc", linewidth=1.2, zorder=8)
         if g.get("annotation_number") is not None:
-            ax.text(g["x"], g["y"], str(g["annotation_number"]), color="#3b250b", fontsize=8,
-                    weight="bold", ha="center", va="center", zorder=9)
+            bx, by = g["x"] + .025, g["y"] + .025
+            ax.scatter(bx, by, s=55, color="#05070c", edgecolor="#ffb347", linewidth=.8, zorder=10)
+            ax.text(bx, by, str(g["annotation_number"]), color="#fff4dc", fontsize=6,
+                    weight="bold", ha="center", va="center", zorder=11)
     ax.text(.02, .965, "01   ━━━   MAP OF MEANING", transform=ax.transAxes, color="#e8edf5", fontsize=9, weight="bold", va="top")
     ax.text(.02, .925, "BLOCKSTREAM VIDEOS", transform=ax.transAxes, color="#f3f6fb", fontsize=25, weight="bold", va="top")
     st = DATA["stats"]

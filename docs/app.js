@@ -196,11 +196,19 @@
         starPath(x, y, 10, 2.4);
         ctx.fill();
         if (g.annotation_number != null) {
-          ctx.fillStyle = "#3b250b";
-          ctx.font = `800 10px "Barlow Condensed", sans-serif`;
+          const bx = x + 9, by = y - 9;
+          ctx.beginPath();
+          ctx.arc(bx, by, 6.5, 0, Math.PI * 2);
+          ctx.fillStyle = "#05070c";
+          ctx.fill();
+          ctx.strokeStyle = GOLD;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+          ctx.fillStyle = "#fff4dc";
+          ctx.font = `800 9px "Barlow Condensed", sans-serif`;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
-          ctx.fillText(String(g.annotation_number), x, y + 0.3);
+          ctx.fillText(String(g.annotation_number), bx, by + 0.3);
         }
       });
     }
